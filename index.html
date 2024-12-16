@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>気象庁 天気予報</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="region-switcher">
+            <label for="region-select">地域を選択:</label>
+            <select id="region-select">
+                <option value="kushiro">釧路</option>
+                <option value="tokyo">東京</option>
+                <option value="saitama">埼玉</option>
+            </select>
+        </div>
+        <h1>気象庁 天気予報</h1>
+    </header>
+    <main>
+        <section id="weather-display">
+            <!-- 天気情報 -->
+            <h2 class="region-name">釧路</h2>
+            <p>今日の天気: <span class="weather">-</span></p>
+            <p>気温: 最低 <span class="min-temp">-</span>°C / 最高 <span class="max-temp">-</span>°C</p>
+            <p>明日の天気: <span class="weather-tomorrow">-</span></p>
+            <p>気温: 最低 <span class="min-temp-tomorrow">-</span>°C / 最高 <span class="max-temp-tomorrow">-</span>°C</p>
+        </section>
+    </main>
+    <footer>
+        <p>データ提供: <a href="https://www.jma.go.jp/" target="_blank">気象庁</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
